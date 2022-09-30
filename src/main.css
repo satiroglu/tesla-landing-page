@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.2rem];
+}
+.navlink {
+    @apply text-2xl font-semibold text-[#181b21] mx-[0.2rem] px-[2rem] py-[1rem] rounded-[0.4rem] bg-transparent hover:text-gray-700 hover:bg-[#181b21] hover:bg-opacity-5 transition-colors duration-300;
+}
+.carsection {
+    @apply w-full h-screen relative;
+}
+.carimg {
+    @apply w-full h-full object-cover;
+}
+.cardetails {
+    @apply absolute top-[20%] left-[50%] text-center;
+}
+.transform_50 {
+    transform: translate(-50%, -50%);
+}
+.model {
+    @apply text-[4rem] text-[#393c41] font-semibold;
+}
+.tag {
+    @apply text-[#4c4d50] text-2xl;
+}
+.button {
+    @apply absolute top-[80%] left-[50%] flex flex-col lg:flex-row;
+}
+.btn {
+    @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.2rem] w-[25.5rem] h-16 bg-opacity-80;
+}
+.inventory {
+    @apply text-[#393c41] bg-white bg-opacity-60 lg:ml-8;
+}
+.downsvg {
+    @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce;
+}
+
